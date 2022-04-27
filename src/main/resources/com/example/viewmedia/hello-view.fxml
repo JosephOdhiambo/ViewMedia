@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.viewmedia.HelloController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="500.0" fitWidth="1000.0">
+         <viewport>
+            <Rectangle2D />
+         </viewport></MediaView>
+      <Pane layoutX="474.0" layoutY="31.0" prefHeight="415.0" prefWidth="312.0" style="-fx-background-color: #ffffff67; -fx-background-radius: 120px;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.34117648005485535" green="0.34117648005485535" blue="0.34117648005485535" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label layoutX="95.0" layoutY="31.0" text="YOUR LOGO" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#405aa800" labelFloat="true" layoutX="55.0" layoutY="100.0" prefHeight="50.0" prefWidth="201.0" promptText="USERNAME" style="-fx-border-color: #fff; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXPasswordField focusColor="#405aa800" labelFloat="true" layoutX="55.0" layoutY="194.0" prefHeight="50.0" prefWidth="201.0" promptText="PASSWORD" style="-fx-border-color: #fff; -fx-border-radius: 50px;" unFocusColor="#4d4d4d00">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </JFXPasswordField>
+            <JFXButton layoutX="56.0" layoutY="274.0" prefHeight="50.0" prefWidth="201.0" style="-fx-background-color: #ff6666; -fx-background-radius: 50px;" text="SIGNIN" textFill="WHITE" />
+            <JFXButton layoutX="55.0" layoutY="339.0" prefHeight="50.0" prefWidth="201.0" style="-fx-background-radius: 50px;" text="FORGOT PASSWORD?" textFill="WHITE" underline="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
